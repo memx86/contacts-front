@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcontacts_front=self.webpackChunkcontacts_front||[]).push([[438],{2810:function(n,t,c){c.r(t);var e=c(2791),r=c(5025),s=c(3329);t.default=function(){return(0,s.jsx)(e.Fragment,{children:(0,s.jsx)(r.Z,{})})}}}]);
+//# sourceMappingURL=Login.3bd76ba4.chunk.js.map
