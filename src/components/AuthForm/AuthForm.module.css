@@ -1,0 +1,76 @@
+.form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid #0080ff;
+  border-radius: 10px;
+}
+.label {
+  position: relative;
+  width: 100%;
+  font-size: 1.25rem;
+}
+.input {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  min-width: 200px;
+  width: 50%;
+  border: 1px solid #0080ff;
+  border-radius: 10px;
+  transition: border-color 250ms linear;
+}
+.input:focus,
+.input:not(:placeholder-shown) {
+  border-color: #0080ff;
+  outline: 1px solid #0080ff;
+}
+.input:-webkit-autofill {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #000;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: transform 250ms linear;
+}
+.input:focus + .text,
+.input:not(:placeholder-shown) + .text {
+  transform: translateY(-225%);
+}
+.error {
+  position: absolute;
+  z-index: 2;
+  left: 1rem;
+  top: -1.5rem;
+  color: red;
+  background-color: #fff;
+}
+.btn {
+  padding: 0.5rem;
+  min-width: 100px;
+  min-height: 40px;
+  width: 30%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #0080ff;
+  color: #fff;
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear;
+}
+.btn:hover,
+.btn:focus {
+  outline: none;
+  background-color: transparent;
+  color: #000;
+  border-color: #0080ff;
+}
